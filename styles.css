@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Hubballi&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(252, 208, 143);
+    margin: 0;
+    font-family: 'Hubballi', 'cursive';
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    min-height: 100vh;
+}
+
+h1 {
+    color: black;
+    font-size: 8rem;
+    text-align: center;
+    opacity: 0.5;
+}
+
+form { /*tamaño del container del form*/
+    max-width: 100%;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /*Pense que iba al input pero el box shadow quedo mejor en el form*/
+}
+
+.input { /*size del input*/
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+    display: block;
+    width: 100%;
+    border: none; /*le saque el border lineado al input*/
+}
+
+.input::placeholder { /*estilizo el placeholder lo que va antes de escribir la tarea*/
+    color: grey;
+}
+
+.tareas {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /*le sacas el style del viñeteado*/
+}
+
+.tareas li {
+    border-top: 1px solid rgb(206, 140, 16); /*linea que separa el input de la lista de tareas*/
+    font-size: 1.3rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+}
+
+.tareas li.completed {
+    text-decoration: line-through; /*efecto para tachar/trazar linea sobre tarea-li*/
+    color: grey; /*tome este color al terminar*/
+}
+small {
+    color: rgb(69, 69, 69);
+    margin-top: 3rem; /*distancia con el element de arriba*/
+    text-align: center;
+}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="./index.js" defer></script>
+    <title>Tasks App | Tareas x Hacer</title>
+</head>
+<body>
+    <h1>TAREAS X HACER</h1>
+    <form id="form">
+
+        <input type="text" id="input" class="input"
+                placeholder="Escribe tu tarea..."
+                autocomplete="off">   <!--voy a estilizar el input x eso le + clase, y el autocomplete= off, es para quitar el auto completado cuando estamos x escribir una tarea-->
+            
+        <ul class="tareas" id="tareas"></ul>
+    </form>
+        <small> <strong> Click Izquierdo para marcar lo completado. <br>
+        Click Derecho para borrar la tarea.</strong></small>
+</body>
+</html>
